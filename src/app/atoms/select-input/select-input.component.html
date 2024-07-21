@@ -1,7 +1,11 @@
 <div class="relative z-0 w-full mb-6 group">
-    <input [type]="type" [formControl]="control"
+    <label class="block text-sm text-gray-700 mb-2">{{ label }}</label>
+    <select [formControl]="control"
         class="block py-2.5 px-4 w-full text-sm text-gray-900 rounded-md bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 placeholder:font-medium focus:border-[#009688] peer"
-        [placeholder]="label" required />
+        required>
+        <option value="" disabled selected>Select your country</option>
+        <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+    </select>
     <div *ngIf="control.invalid && (control.dirty || control.touched)" class="text-red-600 text-sm mt-1">
         <span *ngIf="control.errors?.['required']">{{ label }} is required.</span>
     </div>

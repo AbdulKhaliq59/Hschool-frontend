@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { SearchFormComponent } from '../../molecules/search-form/search-form.component';
-import { MainLayoutComponent } from '../../templates/main-layout/main-layout.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SearchFormComponent, MainLayoutComponent],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

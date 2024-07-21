@@ -1,0 +1,15 @@
+<div class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div
+        class="w-full max-w-xl p-8 rounded-lg shadow-lg bg-white h-96 lg:h-[600px] flex flex-col items-center justify-center">
+        <p class="text-center text-2xl text-[#908D8D] font-normal mb-6">LOGIN</p>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="w-full flex flex-col items-center">
+            <app-input-field class="w-3/4" label="Email Or Phone" type="text"
+                [control]="emailControl"></app-input-field>
+            <app-input-field class="w-3/4" label="Password" type="password"
+                [control]="passwordControl"></app-input-field>
+            <button
+                class="w-2/4 border-2 border-[#009688] text-[#009688] hover:bg-[#009688] hover:text-white p-2 px-8 rounded-md"
+                type="submit">Login</button>
+        </form>
+    </div>
+</div>

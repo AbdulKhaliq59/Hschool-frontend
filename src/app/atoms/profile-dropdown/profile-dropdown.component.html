@@ -1,0 +1,12 @@
+<div class="relative">
+    <button (click)="toggleDropdown()" class="flex items-center space-x-2 text-gray-600">
+        <svg class="w-8 h-8 rounded-full text-teal-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5.121 17.804A10.978 10.978 0 0112 14a10.978 10.978 0 016.879 3.804M12 12a3 3 0 100-6 3 3 0 000 6zm0 2a7 7 0 00-7 7v1h14v-1a7 7 0 00-7-7z" />
+        </svg>
+    </button>
+    <div *ngIf="isDropdownOpen" class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Logout</a>
+    </div>
+</div>

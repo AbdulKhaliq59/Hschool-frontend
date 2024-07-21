@@ -1,0 +1,19 @@
+<div class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="w-full max-w-xl p-8 rounded-lg shadow-lg bg-white h-auto flex flex-col items-center justify-center">
+        <p class="text-center text-2xl text-[#908D8D] font-normal mb-6">SIGN UP</p>
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="w-full flex flex-col items-center">
+            <app-input-field class="w-3/4" label="Email" type="email" [control]="emailControl"></app-input-field>
+            <app-input-field class="w-3/4" label="Phone Number" type="text"
+                [control]="phoneNumberControl"></app-input-field>
+            <app-input-field class="w-3/4" label="Password" type="password"
+                [control]="passwordControl"></app-input-field>
+            <app-select-input class="w-3/4" label="Country" [control]="countryControl"
+                [options]="countries"></app-select-input>
+            <app-radio-input class="w-3/4" label="Are you an instructor?"
+                [control]="instructorControl"></app-radio-input>
+            <button
+                class="w-2/4 border-2 border-[#009688] text-[#009688] hover:bg-[#009688] hover:text-white p-2 px-8 rounded-md"
+                type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>

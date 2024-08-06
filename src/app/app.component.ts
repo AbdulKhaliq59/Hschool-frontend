@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { graphqlProvider } from './graphql.provider';
-import { ToastrModule } from 'ngx-toastr';
-
 
 @Component({
   selector: 'app-root',

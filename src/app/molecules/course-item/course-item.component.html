@@ -1,0 +1,38 @@
+<div class="flex flex-col md:flex-row items-center p-4 border rounded-lg mb-4 bg-white shadow-md">
+    <!-- Left Section -->
+    <div class="flex-1 mb-4 md:mb-0">
+        <p class="text-gray-600 text-sm md:text-base">Course Name</p>
+        <p class="text-xl md:text-2xl font-medium">{{ courseName }}</p>
+        <a href="#" class="text-[#009688] mt-2 block text-sm md:text-base">descholar</a>
+        <div class="mt-2">
+            <button
+                class="mr-2 px-3 py-1 text-sm md:px-4 md:py-2 border-2 border-[#009688] text-[#009688] rounded-md">Edit</button>
+            <button
+                class="px-3 py-1 text-sm md:px-4 md:py-2 border-2 border-red-500 text-red-500 rounded-md">Remove</button>
+        </div>
+    </div>
+
+    <!-- Vertical Divider -->
+
+    <!-- Progress Section -->
+    <div class="flex items-center mx-4 md:mx-6 mb-4 md:mb-0">
+        <div class="flex items-center">
+            <mat-progress-spinner class="w-12 h-12 md:w-16 md:h-16 custom-progress-spinner" [value]="progress"
+                [mode]="'determinate'">
+            </mat-progress-spinner>
+            <div class="ml-3 md:ml-4 text-left">
+                <p class="text-xl md:text-3xl font-normal">{{ progress }}%</p>
+                <p class="text-sm md:text-md text-gray-500">Completed</p>
+            </div>
+        </div>
+    </div>
+    <div class="border-l border-gray-300 h-24 mx-4 md:mx-6 hidden md:block"></div>
+
+    <!-- Right Section -->
+    <div class="text-left text-sm md:text-base">
+        <p class="text-xs md:text-md text-gray-500">CURRENT COURSE</p>
+        <p class="text-lg md:text-3xl">Lesson {{ lessonNumber }}</p>
+        <button class="mt-2 px-3 py-1 md:px-4 md:py-2 bg-[#009688] text-white rounded-md text-sm md:text-base">UPDATE
+            PROGRESS</button>
+    </div>
+</div>

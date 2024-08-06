@@ -27,7 +27,12 @@
     "apollo-angular": "^7.0.2",
     "apollo-angular-link-http": "^1.11.0",
     "apollo-cache-inmemory": "^1.6.6",
+    "chart.js": "^4.4.3",
     "graphql": "^16.9.0",
+    "jwt-decode": "^4.0.0",
+    "ng-circle-progress": "^1.7.1",
+    "ng2-charts": "^6.0.1",
+    "ngx-cookie-service": "^18.0.0",
     "ngx-toastr": "^18.0.0",
     "rxjs": "~7.8.0",
     "zone.js": "~0.14.3"

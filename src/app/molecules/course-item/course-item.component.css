@@ -1,0 +1,16 @@
+.mat-progress-spinner {
+    margin: auto;
+}
+
+.custom-progress-spinner circle {
+    stroke: currentColor;
+}
+
+.mat-progress-spinner circle:nth-child(2) {
+    color: #009688;
+    /* Complete part color */
+}
+
+.mat-progress-spinner circle:nth-child(1) {
+    color: #6b7280;
+}
